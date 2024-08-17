@@ -1,0 +1,26 @@
+{
+    "configurations": [
+        {
+            "type": "command",
+            "name": "run",
+            "dependsOn": [
+                "build"
+            ],
+            "program": "$PROJECT_DIR$/tetris.exe",
+        },
+        {
+            "type": "command",
+            "name": "build",
+            "program": "clang++.exe",
+            "args": [
+                "main.cpp",
+                "board.cpp",
+                "block.cpp",
+                "game.cpp",
+                "misc/random.cpp",
+                "-o",
+                "tetris.exe"
+            ],
+        },
+    ]
+}

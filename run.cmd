@@ -1,0 +1,1 @@
+start "" tetris.exe
